@@ -1,0 +1,339 @@
+/* 顶部公共样式 */
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?fnrnhz');
+    src: url('../fonts/icomoon.eot?fnrnhz#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?fnrnhz') format('truetype'), url('fonts/icomoon.woff?fnrnhz') format('woff'), url('fonts/icomoon.svg?fnrnhz#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.w {
+    /* 版心 */
+    width: 1226px;
+    margin: auto;
+}
+
+.head_nav {
+    height: 40px;
+    /* margin: auto; */
+    background-color: #333;
+    color: #B0B0B0;
+}
+
+.nav {
+    position: relative;
+    height: 40px;
+}
+
+.nav ul {
+    float: left;
+    height: 100%;
+    width: 730px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.nav ul li {
+    float: left;
+    margin-right: 5px;
+}
+
+.nav ul li:nth-child(even) {
+    width: 1px;
+    height: 16px;
+    /* border: 1px solid #000; */
+    background-color: #000;
+    margin-top: 11px;
+}
+
+.nav ul li a:hover {
+    color: #FF6700;
+}
+
+
+/* 右边登录模块 */
+
+.nav_right {
+    float: right;
+    height: 100%;
+}
+
+.nav_right ul {
+    width: 143px;
+}
+
+.nav_right #car {
+    /* 购物车 */
+    position: relative;
+    float: left;
+    height: 40px;
+    width: 120px;
+    background-color: #424242;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+#car .icon-cart {
+    padding-right: 3px;
+    color: #B0B0B0;
+}
+
+#car .car_in {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    /* 隐藏的购物车模块 */
+    width: 280px;
+    height: 100px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 100px;
+    color: #B0B0B0 !important;
+    box-shadow: 1px 2px 1px 2px #eee;
+}
+
+#car:hover .car_in {
+    /* 鼠标经过购物车内部显示 */
+    display: block !important;
+    z-index: 999;
+}
+
+#car:hover {
+    background-color: #fff;
+    color: #FF6700;
+}
+
+
+/* 下载app
+
+#downapp {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 500px;
+    width: 100px;
+    background: url(../image/download.png) center;
+}
+
+#mi_app:hover #downapp {
+    display: block;
+} */
+
+
+/* ------------------------------底部公共样式 */
+
+.w {
+    /* 版心 */
+    width: 1226px;
+}
+
+footer {
+    height: 600px;
+    margin-top: 20px;
+}
+
+
+/* -----公司信息 */
+
+.company {
+    height: 330px;
+}
+
+
+/* 7天无理由退货 */
+
+.company ul {
+    height: 80px;
+    border-bottom: 1px solid #616161;
+}
+
+.company ul li {
+    float: left;
+    width: 243px;
+    height: 25px;
+    padding: 27px 0px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 16px;
+    color: #616161;
+}
+
+.company ul li:nth-child(even) {
+    width: 1px;
+    height: 30px;
+    color: #616161;
+}
+
+
+/* 关于我们 */
+
+.company .look_my {
+    height: 250px;
+    margin: 20px 0px;
+}
+
+.look_my .my {
+    height: 100%;
+    width: 970px;
+    float: left;
+}
+
+.my dl {
+    float: left;
+    width: 160px;
+    /* text-align: center; */
+    color: #424242;
+}
+
+.my dl dt {
+    /* text-align: center; */
+    margin-bottom: 26px;
+    font-size: 14px;
+}
+
+.my dl dd {
+    color: #757575;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.my dl dd a:hover {
+    color: #FF6700;
+}
+
+
+/* 人工客服 */
+
+.look_my .server {
+    float: right;
+    width: 252px;
+    height: 110px;
+    padding-left: 30px;
+    /* background-color: pink; */
+    border-left: 1px solid #616161;
+    color: #616161;
+}
+
+.server h3 {
+    font-size: 22px;
+    color: #FF6700;
+    margin-left: -8px;
+}
+
+.server p {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.server>a {
+    display: block;
+    width: 120px;
+    height: 30px;
+    margin-left: 10px;
+    border: 1px solid #FF6700;
+    text-align: center;
+    line-height: 30px;
+}
+
+.server .mi {
+    width: 100%;
+    height: 21px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.mi>img {
+    display: none;
+}
+
+.icon-phone:hover {
+    background-color: #FF6700;
+    color: #fff;
+}
+
+.mi a:nth-child(2):hover .mi>img {
+    display: block;
+}
+
+
+/* 最终解释权 */
+
+.word {
+    /* height: 265px; */
+    height: 165px;
+    padding: 30px 0px;
+    background-color: #FAFAFA;
+}
+
+.word_in {
+    height: 100%;
+}
+
+.word_in .font {
+    height: 108px;
+    width: 100%;
+}
+
+.font .logo {
+    /* 小米logo */
+    /* float: left; */
+    width: 56px;
+    height: 56px;
+    margin-right: 20px;
+    background: url(../image/logo-mi2.png) center;
+    background-size: 56px;
+}
+
+.font .font_in {
+    /* float: right; */
+    height: 100%;
+}
+
+.font .font_in ul {
+    display: block;
+    height: 18px;
+}
+
+.font .font_in ul li {
+    float: left;
+    margin-right: 3px;
+    transform: translate(76px, -56px);
+}
+
+.font_in ul li:nth-child(even) {
+    width: 1px;
+    height: 10px;
+    margin-top: 4px;
+    background-color: #B0B0B0;
+}
+
+.font .font_in ol {
+    transform: translate(76px, -56px);
+}
+
+.font .font_in ol li {
+    float: left;
+    margin-right: 3px;
+}
+
+.font_in ol li:nth-child(even) {
+    width: 1px;
+    height: 10px;
+    margin-top: 4px;
+    background-color: #B0B0B0;
+}
+
+.font .font_in p {
+    transform: translate(76px, -56px);
+}
+
+.word_in #fonts {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 18px;
+    transform: translateY(-30px);
+}
